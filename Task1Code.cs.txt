@@ -1,0 +1,24 @@
+using System;
+using System.IO;
+
+class Task1Code
+{
+  static void Main ()
+  {
+    
+int[] arr = {7,3,8,4,5,1,6 };
+    int missingNumber, Totalsum;
+    
+    Totalsum = (arr.Length + 1) * (arr.Length + 2) / 2;
+
+    
+    foreach (int item in arr)
+    {
+      Totalsum = Totalsum - item;
+    }
+    missingNumber = Totalsum;
+
+    Console.WriteLine ("missing number  : {0}", missingNumber);
+  }
+}
+
